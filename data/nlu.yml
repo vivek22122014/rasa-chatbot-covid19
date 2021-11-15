@@ -1,0 +1,225 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - who are you
+    - what are you
+    - tell me about yourself?
+    - tell me about yourself
+    - what are you?
+
+- intent: corona_intro
+  examples: |
+    - what is corona?
+    - what is covid-19?
+    - what is novel corona virus?
+    - tell me about corona
+    - what is covid 19
+    - can you tell me about corona
+    - can you tell me about covid-19
+
+- intent: corona_symptoms
+  examples: |
+    - What are the symptoms of novel coronavirus?
+    - What are the symptoms of novel corona virus?
+    - What are the symptoms of novel covid-19 virus?
+    - What are the symptoms of corona virus?
+    - symptoms of corona virus?
+    - symptoms of covid19 virus?
+
+- intent: corona_stats_check
+  examples: |
+    - Corona stats
+    - i want to check corona statistics
+    - corona tracker
+    - corona stats
+    - covid tracker
+    - covid stats
+
+- intent: corona_states_stat
+  examples: |
+    - [India](state)
+    - I live in [India](state:India)
+    - [Gujarat](state)
+    - I live in [Gujarat](state:Gujarat)
+    - [Andhra Pradesh](state)
+    - I live in [Andhra Pradesh](state:Andhra Pradesh)
+    - [Arunachal Pradesh](state)
+    - I live in [Arunachal Pradesh](state:Arunachal Pradesh)
+    - [Assam](state)
+    - I live in [Assam](state:Assam)
+    - [Bihar](state)
+    - I live in [Bihar](state:Bihar)
+    - [Goa](state)
+    - I live in [Goa](state:Goa)
+    - [Chhattisgarh](state)
+    - I live in [Chhattisgarh](state:Chhattisgarh)
+    - [Haryana](state)
+    - I live in [Haryana](state:Haryana)
+    - [Himachal Pradesh](state)
+    - I live in [Himachal Pradesh](state:Himachal Pradesh)
+    - [Jharkhand](state)
+    - I live in [Jharkhand](state:Jharkhand)
+    - [Karnataka](state)
+    - I live in [Karnataka](state:Karnataka)
+    - [Madhya Pradesh](state)
+    - I live in [Madhya Pradesh](state:Madhya Pradesh)
+    - [Kerala](state)
+    - I live in [Kerala](state:Kerala)
+    - [Maharashtra](state)
+    - I live in [Maharashtra](state:Maharashtra)
+    - [Manipur](state)
+    - I live in [Manipur](state:Manipur)
+    - [Meghalaya](state)
+    - I live in [Meghalaya](state:Meghalaya)
+    - [Mizoram](state)
+    - I live in [Mizoram](state:Mizoram)
+    - [Nagaland](state)
+    - I live in [Nagaland](state:Nagaland)
+    - [Odisha](state)
+    - I live in [Odisha](state:Odisha)
+    - [Punjab](state)
+    - I live in [Punjab](state:Punjab)
+    - [Rajasthan](state)
+    - I live in [Rajasthan](state:Rajasthan)
+    - [Sikkim](state)
+    - I live in [Sikkim](state:Sikkim)
+    - [Tamil Nadu](state)
+    - I live in [Tamil Nadu](state:Tamil Nadu)
+    - [Telangana](state)
+    - I live in [Telangana](state:Telangana)
+    - [Tripura](state)
+    - I live in [Tripura](state:Tripura)
+    - [Uttar Pradesh](state)
+    - I live in [Uttar Pradesh](state:Uttar Pradesh)
+    - [Uttarakhand](state)
+    - I live in [Uttarakhand](state:Uttarakhand)
+    - [West Bengal](state)
+    - I live in [West Bengal](state:West Bengal)
+    - [Delhi](state)
+    - I live in [Delhi](state:Delhi)
+
+- intent: Thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot 
+    - thank you so much
+
+- intent: corona_pincode
+  examples: |
+    - [360002](pincode)
+    - my pin code is [500045](pincode)
+    - My pincode is [360005](pincode)
+    - my zip code is [380002](pincode)
+    - zip code [350001](pincode)
+    - pin code is [400010](pincode)
+    - zip code is [500032](pincode)
+
+
+- regex: pincode
+  examples: |
+    - \d{6}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

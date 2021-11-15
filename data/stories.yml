@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: corona intro
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+
+- story: corona tracker path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_stats_check
+  - action: utter_corona_stats_check
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat
+
+- story: corona tracker 2 path
+  steps:
+  - intent: corona_stats_check
+  - action: utter_corona_stats_check
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat
+
+- story: corona symptoms path
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: thanks path
+  steps:
+  - intent: Thanks
+  - action: utter_Thanks
+
+- story: who am i
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: corona pincode path
+  steps:
+  - intent: corona_pincode
+  - action: action_corona_pincode

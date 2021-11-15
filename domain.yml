@@ -1,0 +1,83 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intro
+  - corona_states_stat
+  - corona_stats_check
+  - corona_symptoms
+  - Thanks
+  - corona_pincode
+
+
+actions:
+  - actions_corona_state_stat
+  - action_corona_pincode
+
+
+
+entities:
+  - state
+  - pincode
+
+
+
+slots:
+  state:
+    type: unfeaturized
+  pincode:
+    type: unfeaturized
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome To COVID-19 Stats Bot.\nYou Can Ask Me about Following Info: \n 1.To Check Corona Statistics Of Your State Where You Live , Type 'Corona state name' or 'pin code' \n 2. What Is COVID-19? \n 3. COVID-19 Symptoms Check"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "GoodBye! Hope To See You Soon !\nJust Type 'hey' or 'hi' anytime :))"
+
+  utter_iamabot:
+  - text: "I am a COVID-19 Stats bot, Developed By Vivek Kumar"
+
+  utter_corona_intro:
+  - text: "The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).[1] The disease was first identified in December 2019 in Wuhan, China.[4] The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January 2020 and a pandemic on 11 March 2020."
+
+  utter_country_entry:
+  - text: "Can You Please Enter Your Current State or pin code From India?"
+
+  utter_corona_stats_check:
+  - text: "Covid-19 Tracker [India] :\nPlease Enter the State name you wish to see the Covid-19 Statistics : "
+
+  utter_corona_symptoms:
+  - text: "COVID-19 symptoms include:\nCough\nFever or chills\nShortness of breath or \ndifficulty breathing\nMuscle or body aches\nSore throat\nNew loss of taste or smell\nDiarrhea\nHeadache\nNew fatigue\nNausea or vomiting\nCongestion or runny noseIn confirmed cases of illness in humans, common symptoms have been acute, serious respiratory illness with fever, cough, shortness of breath, and breathing difficulties. Based on current clinical experience, the infection generally presents as pneumonia. It has caused kidney failure and death in some cases. It is important to note that the current understanding of the illness caused by this infection is based on a limited number of cases and may change as more information becomes available."
+  
+  utter_Thanks:
+  - text: "Your Welcome . Glad I could be of some help!\nJust type 'hey' or 'hi' again to redirect to the main phase of bot ! :))"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
